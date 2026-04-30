@@ -4,66 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="288dp"
-        android:layout_height="84dp"
-        android:src="@drawable/vectoroperacioness" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        app:titleTextColor="@color/white" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="101dp"
-        android:fontFamily="@font/DemodeCapitals"
-        android:text="OMABA"
-        android:textColor="@color/white"
-        android:textSize="70dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="0dp">
 
-    <TextView
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="select your difficulty!"
-        android:textColor="#CE93D8"/>
+        <ImageView
+            android:layout_width="288dp"
+            android:layout_height="84dp"
+            android:src="@drawable/vectoroperacioness" />
 
-    <RadioGroup android:id="@+id/rgDifficulty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton android:id="@+id/rbEasy"
-            android:text="Easy"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:fontFamily="@font/adelia"
+            android:text="OMABA"
+            android:textColor="@color/white"
+            android:textSize="60dp" />
+
+        <TextView
             android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#33FF00"
-            />
-        <RadioButton android:id="@+id/rbMedium"
-            android:text="Medium"
-            android:textSize="20dp"
+            android:text="select your difficulty!"
+            android:textColor="#CE93D8"/>
+
+        <RadioGroup android:id="@+id/rgDifficulty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#CCFF00"
-            />
-        <RadioButton android:id="@+id/rbHard"
-            android:text="Hard"
-            android:textSize="20dp"
+            android:layout_marginTop="16dp">
+            <RadioButton android:id="@+id/rbEasy"
+                android:text="Easy"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33FF00"
+                android:layout_marginBottom="8dp"/>
+            <RadioButton android:id="@+id/rbMedium"
+                android:text="Medium"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CCFF00"
+                android:layout_marginBottom="8dp"/>
+            <RadioButton android:id="@+id/rbHard"
+                android:text="Hard"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:text="Start"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FF0000"
-            />
-    </RadioGroup>
+            android:layout_marginTop="24dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"/>
 
-    <Button
-        android:id="@+id/btnStart"
-        android:text="Start"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:backgroundTint="#FFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
+    </LinearLayout>
 </LinearLayout>
