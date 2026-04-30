@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initToolBar() {
         setSupportActionBar(mainToolBar)
-        supportActionBar?.title = "Brain Test :)"
+        supportActionBar?.title = "Brain Trainer :)"
         mainToolBar.setTitleTextColor(Color.WHITE)
     }
 
